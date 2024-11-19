@@ -1,0 +1,284 @@
+/* Barra de navegacion */
+.navbar{
+  padding: 2rem;
+  background-color: aqua;
+}
+.navbar-collapse{
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estilos generales */
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: "Permanent Marker", cursive;
+  }
+
+  .seccion-oscura{
+    color: black ;
+    background-color: cornflowerblue;
+  }
+
+  .seccion-clara{
+    color: black;
+    background-color: white;
+  }
+
+  .seccion-titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Permanent Marker', cursive;
+  }
+
+  .seccion-descripcion{
+    font-size: 1.2rem;
+    color: #584e4e;
+  }
+
+  .seccion-texto{
+    font-size: 1.2rem;
+  }
+
+  .texto-negro {
+    color: black;
+  }
+
+  .texto-blanco{
+    color: white;
+  }
+
+/* Seccion Principal */
+.hero{
+  background-color: aliceblue;
+  min-height: 450px;
+  text-align: center;
+}
+
+.hero-principal {
+  padding: 3rem;
+}
+
+.hero-imagen-principal {
+  width: 600px;
+  height: 200px;
+  margin: 30px;
+}
+
+.hero-principal h2 {
+  font-size: 1.5rem;
+  color: blueviolet;
+}
+
+/* Introduccion */
+.introduccion{
+  height: 500px;
+  padding: 10px;
+}
+
+.introduccion .contenedor{
+  max-width: 700px;
+  text-align: center;
+}
+ /* Desarrollo del proyecto */
+ .desarrollo{
+  padding:  40px;
+ }
+
+ .desarrollo .columna {
+  padding: 20px;
+  border: 2px solid #8080804d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+ }
+ .desarrollo .columna:hover{
+  color: rgb(255, 0, 0);
+  background-color: mediumturquoise;
+ }
+
+ .desarrollo i {
+  font-size: 2.5rem;
+  color: darkorchid;
+  background-color: #0a0a23;
+  padding: 8px 19px;
+  border-radius: 50%;
+ }
+
+ .desarrollo-titulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+ }
+
+ .badges-contenedor{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+ }
+
+ .badge { 
+  margin: 5px;
+ }
+
+ /* Proyectos */
+ .proyectos-recientes {
+  padding: 40px;
+ }
+
+ .proyectos-recientes img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+ }
+
+.proyectos-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.overlay {
+  background-color: rgba(0, 88, 252, 0.7); 
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.overlay p {
+  font-family: 'Arial', sans-serif;  
+  font-size: 1rem;                  
+  color: #ffffff; 
+  line-height: 1.5;                 
+  margin-top: 10px;                  
+}
+
+.proyecto {
+  position: relative;
+}
+
+.proyecto:hover img {
+  opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+  opacity: 1;
+
+}
+/* ambitos */
+.ambitos {
+  padding: 40px 40px 80px 40px;
+}
+
+.ambitos .carousel {
+  max-width: 800px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.ambitos-imagen {
+  max-width: 150px; 
+  height: auto;     
+}
+
+/* Contacto */
+.contacto .container {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+}
+
+.contacto .rectangulo {
+  background-color: rgb(0, 123, 255) !important;
+  border-radius: 10px !important;
+  box-shadow: 0px 1px 4px 1px white !important;
+}
+
+.contacto .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contacto .descripcion {
+  color: white;
+  font-size: 1.2rem;
+} 
+
+.contacto button {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+} 
+
+.contacto button:hover {
+  background-color: white;
+  color: black;
+}
+.contacto button i {
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover i {
+  color: bl;
+}
+
+/* Adaptable */
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .ambitos-imagen{
+    height: 120px;
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+      display: none; 
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hero-inferior-imagen {
+    max-width: 600px;
+  }
+}
